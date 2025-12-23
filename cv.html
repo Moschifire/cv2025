@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Oladeinde - CV</title>
+    <style>
+        :root {
+            --primary-color: #1a4a7a;
+            --text-color: #333;
+            --line-color: #ddd;
+            --bg-color: #fff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+            line-height: 1.5;
+            color: var(--text-color);
+            background-color: #f0f2f5;
+            padding: 40px 0;
+        }
+
+        .cv-container {
+            max-width: 850px;
+            margin: auto;
+            background: var(--bg-color);
+            padding: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            font-size: 13px;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 16px;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--line-color);
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+        }
+
+        .summary-text {
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .skills-category {
+            font-weight: bold;
+            color: #444;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .company-name {
+            font-style: italic;
+            color: #555;
+        }
+
+        .date-location {
+            font-size: 13px;
+            color: #666;
+        }
+
+        ul {
+            margin-left: 18px;
+            font-size: 14px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .education-item {
+            margin-bottom: 10px;
+        }
+
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+
+            .cv-container {
+                box-shadow: none;
+                border: none;
+                width: 100%;
+                max-width: 100%;
+                padding: 30px;
+            }
+
+            .contact-info a {
+                color: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv-container">
+        <header>
+            <h1>Mark Oladeinde</h1>
+            <div class="subtitle">Learning and Impact Manager</div>
+            <div class="contact-info">
+                <span>Lagos, Nigeria</span>
+                <span>|</span>
+                <span>+234 813 090 0145</span>
+                <span>|</span>
+                <a href="mailto:markoladeinde@gmail.com">markoladeinde@gmail.com</a>
+                <span>|</span>
+                <a href="https://www.linkedin.com/in/mark-oladeinde-59512369/">LinkedIn Profile</a>
+            </div>
+        </header>
+
+        <section id="summary">
+            <h2>Professional Summary</h2>
+            <p class="summary-text">
+                Results-driven Learning and Impact Manager with over 4 years of experience in EdTech and instructional
+                design. Proven track record in designing high-impact educational programs across multiple curricula.
+                Expert in translating complex assessment data into actionable improvement plans and aligning learning
+                outcomes with organizational goals. Skilled in curriculum development, monitoring and evaluation (M&E),
+                and tutor performance management.
+            </p>
+        </section>
+
+        <section id="competencies">
+            <h2>Core Competencies</h2>
+            <div class="skills-grid">
+                <div><span class="skills-category">Strategy:</span> Curriculum Design, Program Implementation</div>
+                <div><span class="skills-category">Evaluation:</span> MEL Frameworks, Impact Measurement</div>
+                <div><span class="skills-category">Quality:</span> Tutor Training, Instructional QA</div>
+                <div><span class="skills-category">Technical:</span> Data Reporting, Assessment Design</div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+
+            <!-- Role 1 -->
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span class="job-title">Learning and Impact Manager</span>
+                    <span class="date-location">Aug 2025 – Present</span>
+                </div>
+                <div class="company-name">Gradely.co — Lagos, Nigeria</div>
+                <ul>
+                    <li><strong>Strategic Design:</strong> Orchestrate learning frameworks aligned with international
+                        standards and organizational KPIs.</li>
+                    <li><strong>Data Leadership:</strong> Analyze performance metrics to identify learning gaps and
+                        translate findings into instructional interventions.</li>
+                    <li><strong>Quality Assurance:</strong> Standardized tutor onboarding and observation programs,
+                        ensuring 100% consistency in delivery.</li>
+                    <li><strong>Stakeholder Management:</strong> Produce comprehensive impact reports for executive
+                        leadership to drive continuous program improvement.</li>
+                </ul>
+            </div>
+
+            <!-- Role 2 -->
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span class="job-title">Content Reviewer and Developer</span>
+                    <span class="date-location">Nov 2023 – July 2025</span>
+                </div>
+                <div class="company-name">Gradely.co — Lagos, Nigeria</div>
+                <ul>
+                    <li><strong>Quality Control:</strong> Refined instructional materials across multiple subjects,
+                        ensuring 100% accuracy and curriculum alignment.</li>
+                    <li><strong>Resource Development:</strong> Created assessments and model answers focused on
+                        pedagogical reliability and fairness.</li>
+                    <li><strong>Adaptive Learning:</strong> Tailored content for diverse learner abilities for both
+                        instructor-led and self-paced formats.</li>
+                </ul>
+            </div>
+
+            <!-- Role 3 -->
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span class="job-title">Subject Matter Expert (Contract)</span>
+                    <span class="date-location">June 2021 – May 2023</span>
+                </div>
+                <div class="company-name">Gradely.co — Lagos, Nigeria</div>
+                <ul>
+                    <li>Produced high-quality educational content and collaborated with cross-functional teams to meet
+                        strict deadlines.</li>
+                    <li>Identified and implemented improvements to backend content workflows, enhancing CMS efficiency.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="exp-header">
+                    <span class="job-title">Bachelor of Science (B.Sc.) in Zoology</span>
+                    <span class="date-location">2017</span>
+                </div>
+                <div class="company-name">University of Lagos, Akoka</div>
+            </div>
+            <div class="education-item">
+                <div class="exp-header">
+                    <span class="job-title">OND in Science Laboratory Technology</span>
+                    <span class="date-location">2013</span>
+                </div>
+                <div class="company-name">Yaba College of Technology, Yaba</div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
